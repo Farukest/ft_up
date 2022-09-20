@@ -6,8 +6,8 @@
 #       - export/unexport GPIO22 used to reset the optional SX1261 radio used for LBT/Spectral Scan
 #
 # Usage examples:
-#       ./reset_lgw.sh stop
-#       ./reset_lgw.sh start
+#       /./home/ft/chip_pin_ft.sh stop
+#       /./home/ft/chip_pin_ft.sh start
 
 # GPIO mapping has to be adapted with HW
 #

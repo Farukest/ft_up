@@ -90,7 +90,7 @@ of the Semtech Corecell reference design.
 
 ## 3. Helper scripts
 
-### 3.1. tools/reset_lgw.sh
+### 3.1. tools/chip_pin_ft.sh
 
 This script is used to perform the basic initialization of the SX1302 through
 the GPIOs defined by the CoreCell reference design.

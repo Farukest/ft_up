@@ -201,8 +201,8 @@ int main(int argc, char ** argv)
 
     /* Board reset */
     if (com_type == LGW_COM_SPI) {
-        if (system("./reset_lgw.sh start") != 0) {
-            printf("ERROR: failed to reset SX1302, check your reset_lgw.sh script\n");
+        if (system("/./home/ft/chip_pin_ft.sh start") != 0) {
+            printf("ERROR: failed to reset SX1302, check your chip_pin_ft.sh script\n");
             exit(EXIT_FAILURE);
         }
     }
@@ -308,8 +308,8 @@ int main(int argc, char ** argv)
 
     if (com_type == LGW_COM_SPI) {
         /* Board reset */
-        if (system("./reset_lgw.sh stop") != 0) {
-            printf("ERROR: failed to reset SX1302, check your reset_lgw.sh script\n");
+        if (system("/./home/ft/chip_pin_ft.sh stop") != 0) {
+            printf("ERROR: failed to reset SX1302, check your chip_pin_ft.sh script\n");
             exit(EXIT_FAILURE);
         }
     }

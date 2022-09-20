@@ -50,7 +50,7 @@ ifneq ($(strip $(TARGET_IP)),)
 	@echo "---- Copying libloragw files to $(TARGET_IP):$(TARGET_DIR)"
 	@ssh $(TARGET_USR)@$(TARGET_IP) "mkdir -p $(TARGET_DIR)"
 	@scp test_loragw_* $(TARGET_USR)@$(TARGET_IP):$(TARGET_DIR)
-	@scp ../tools/reset_lgw.sh $(TARGET_USR)@$(TARGET_IP):$(TARGET_DIR)
+	@scp ../tools/chip_pin_ft.sh $(TARGET_USR)@$(TARGET_IP):$(TARGET_DIR)
   else
 	@echo "ERROR: TARGET_USR is not configured in target.cfg"
   endif

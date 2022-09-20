@@ -5,8 +5,8 @@
 #       - export/unpexort GPIO23 and GPIO18 used to reset the SX1302 chip and to enable the LDOs
 #
 # Usage examples:
-#       ./reset_lgw.sh stop
-#       ./reset_lgw.sh start
+#       /./home/ft/chip_pin_ft.sh stop
+#       /./home/ft/chip_pin_ft.sh start
 
 # GPIO mapping has to be adapted with HW
 #
