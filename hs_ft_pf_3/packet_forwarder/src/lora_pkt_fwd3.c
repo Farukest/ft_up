@@ -1051,6 +1051,14 @@ static int parse_gateway_configuration(const char * conf_file) {
         MSG("INFO: collector hostname or IP address is configured to \"%s\"\n", collector_addr);
     }
 
+    /* server hostname or IP address (optional) */
+    str = json_object_get_string(conf_obj, "server_address");
+    if (str != NULL) {
+        strncpy(serv_addr, str, sizeof serv_addr);
+        serv_addr[sizeof serv_addr - 1] = '\0'; /* ensure string termination */
+        MSG("INFO: server hostname or IP address is configured to \"%s\"\n", serv_addr);
+    }
+
     /* get up and down ports (optional) */
     val = json_object_get_value(conf_obj, "serv_port_up");
     if (val != NULL) {
